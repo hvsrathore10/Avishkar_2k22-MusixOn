@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+h1 {
+    font-family: 'Island Moments', 'Arial Narrow', Arial, sans-serif;
+    font-size: xxx-large;
+    font-weight: bold;
+}
+
+body{
+    width: 50%;
+    margin: 0 auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    padding: 8px;
+}
+
+.facebookSignUp-Button{
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    background-color: blue;
+    border-radius: 40px;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.googleSignUp-Button{
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgba(236, 236, 243, 0.594);
+    border-radius: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: rgb(39, 209, 27);
+    transform: scale(1.1);
+}
+
+.container{
+    background-color: rgba(241, 241, 246, 0.439);
+    padding: 5px 20px 15px 20px;
+    border: 1px solid rgb(180, 177, 177);
+    border-radius: 15px;
+}
+header{
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"]{
+    width: 80%;
+    padding: 8px;
+    margin: 4px;
+    contain: white;
+    border: 1px dotted gray;
+    border-radius: 4px;
+}
+fieldset{
+    background-color: white;
+    border: 1px;
+    border-radius: 4px;
+    font-weight: lighter;
+}
+
+input[type="submit"],
+input[type="reset"]{
+    padding: 20px 30px;
+    color: white;
+    font-size: medium;
+    background-color: rgba(37, 212, 24, 0.899);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    background-color: rgba(12, 12, 237, 0.61);
+}
+
+a{
+    color: rgb(103, 93, 93);
+}
+a:hover{
+    color: rgb(39, 209, 27);
+}

@@ -54,6 +54,10 @@ body{
     background-color: rgb(39, 209, 27);
     transform: scale(1.1);
 }
+header i {
+    padding: 5px;
+}
+
 
 .container{
     background-color: rgba(241, 241, 246, 0.439);

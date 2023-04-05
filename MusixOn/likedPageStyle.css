@@ -6,6 +6,7 @@ body{
     background-color: rgb(66, 88, 231);
 }
 
+/* Navbar style */
 .bg-dark_black{
     background-color: black;
 }
@@ -16,33 +17,34 @@ body{
 .useless{
     color: white;
 }
+.nav-item i {
+    padding: 5px;
+}
 .nav-item:hover{
     background-color: rgba(37, 212, 24, 0.899);
     border-radius: 10px;
 }
-.icon-img{
-    margin: 1px 1px 1px 1px;
-    padding: 1px 10px 2px 2px;
-}
 
-.btn:hover{
-    background-color: rgba(37, 212, 24, 0.899);
-}
-.btn-outline-success{
-    color: rgba(37, 212, 24, 0.899);
-    border: 1px solid rgba(37, 212, 24, 0.899);
-}
-
-.d-flex:hover{
-    width: 500px;
+.Avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    font-size: x-large;
+    border: solid white;
+    border-radius: 50px;
 }
 .avatar-img{
+    padding: 5px;
     border-radius: 50px;
-    margin: 1px;
-    padding: 4px;
-    width: 65px;
+    width: 50px;
+}
+.userNamePlat{
+    padding: 10px;
 }
 
+/* Main body style */
 .header-likedPage{
     display: flex;
     flex-direction: row;
@@ -77,7 +79,7 @@ h1{
 #masterPlay:hover{
     transform: scale(1.2);
 }
-.fa-search{
+.fa-magnifying-glass{
     position: absolute;
     right: 3vw;
 }

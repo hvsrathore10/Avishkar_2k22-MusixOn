@@ -25,36 +25,41 @@
     <header>
         <h1><img class="img-logo.MusixOn" src="/on.jpeg" alt="On" width="40"><b>MusixOn</b></h1>
         <p><b><i>To continue, login to MusixOn....</i></b></p>
-        <br><button class="facebookSignUp-Button">Continue with Facebook</button>
-        <br><button class="googleSignUp-Button">Continue with Google</button>
-        <br><button class="mobileNumber-Button">Continue with Phone Number</button>
-        <p>
-            <hr width="80%">
-        </p>
+        <br><button class="facebookSignUp-Button"><i class="fa-brands fa-facebook fa-xl"></i>Continue with Facebook</button>
+        <br><button class="googleSignUp-Button"><i class="fa-brands fa-google fa-xl" style="color: red;"></i>Continue with Google</button>
+        <br><button class="mobileNumber-Button"><i class="fa-solid fa-mobile fa-xl" style="color: black;"></i>Continue with Phone Number</button>
     </header>
-    <div class="container">
-        <form action="">
-            <p>
-                <b>Email address or username :</b><br>
-                <input type="email" name="email" id="email" placeholder="EmailID">
-            </p>
-            <p>
-                <b>Password</b><br>
-                <input type="password" name="password" id="password" placeholder="Password">
-            </p>
-            <a href="/Webster/MusixOn/reset_passwd.html"><small>Forgot your password?</small></a>
+    <hr width="80%">
+    <main>
+        <div class="container">
+            <form action="">
+                <p>
+                    <b>Email address or username :</b><br>
+                    <input type="email" name="email" id="email" placeholder="EmailID" required>
+                </p>
+                <p>
+                    <b>Password</b><br>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                </p>
+                <a href="/MusixOn/reset_passwd.html"><small>Forgot your password?</small></a>
+                <br><br>
+                <input type="checkbox" name="Remember me" id="Remember"><small>Remember me</small>
+                <input type="submit" value="Login">
+            </form>
             <br><br>
-            <input type="checkbox" name="Remember me" id="Remember"><small>Remember me</small>
-            <input type="submit" value="Login">
-        </form>
-        <br><br><hr width="100%">
-        <p>
-            <i>Don't have an account?</i><br>
-            <button>
-                <a href="/Webster/MusixOn/signup_page.html"><big>SIGN UP</big></a>
-            </button>
-        </p>
-    </div>
+            <hr width="100%">
+            <p>
+                <i>Don't have an account?</i><br>
+                <button>
+                    <a href="/MusixOn/signup_page.html"><big>SIGN UP</big></a>
+                </button>
+            </p>
+        </div>
+    </main>
+
+  <!-- fontawesome JAVASCRIPT link -->
+  <script src="https://kit.fontawesome.com/316a6af8a8.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

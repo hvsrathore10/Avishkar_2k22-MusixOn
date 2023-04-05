@@ -29,9 +29,10 @@
 </head>
 
 <body>
+  <!-- navbar -->
   <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark_black">
     <div class="container-fluid">
-      <a class="navbar-brand mb-0 h1" href="/Webster/MusixOn/index.html">
+      <a class="navbar-brand mb-0 h1" href="/MusixOn/index.html">
         <img class="MusixOn-logo" src="/MusixOn_logo.jpeg" width="100" alt="MusixOn logo">MusixOn
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -42,20 +43,20 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/Webster/MusixOn/index.html">
-              <img class="icon-img" src="/icons/home.svg" alt=" ">Home
+            <a class="nav-link" href="/MusixOn/index.html">
+              <i class="fa-solid fa-house fa-xl" style="color: #fff;"></i>Home
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><img class="icon-img" src="/icons/user-plus.svg" alt=" ">Create Playlist</a>
+            <a class="nav-link" href="#"><i class="fa-solid fa-music fa-xl" style="color: #fff;"></i> Create Playlist</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active"><img class="icon-img" src="/icons/heart.svg" alt=" ">Liked Song List</a>
+            <a class="nav-link active" aria-current="page" href="/MusixOn/liked_page.html"><i class="fa-solid fa-heart fa-xl" style="color: #fff;"></i>Liked Song List</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
-              <img class="icon-img" src="/icons/list.svg" alt=" ">Playlist's
+              <i class="fa-solid fa-list fa-xl" style="color: #fff;"></i>Playlist's
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">#My Playlist 1</a></li>
@@ -67,17 +68,15 @@
             </ul>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
         <div class="Avatar">
           <img src="/images/avatar-midjoureny.png" alt="avatar" class="avatar-img">
+          <div class="userNamePlat"><b>UserName</b></div>
         </div>
       </div>
     </div>
   </nav>
-  
+  <!-- main body -->
+  </body>
   <main>
     <div class="header-likedPage">
       <img src="/images/likedPlayList.gif" alt="Liked" width="200px">
@@ -85,17 +84,19 @@
       <h1>Liked Songs</h1>
     </div>
     <div class="transfer-Header">
-      <i class="far fa-5x fa-play-circle" id="masterPlay"></i>
-      <i class="fas fa-5x fa-download"></i>
-      <i class="fas fa-5x fa-search"></i>
+      <i class="fa-solid fa-5x fa-circle-play" id="masterPlay" style="color: #fff;"></i>
+      <i class="fa-solid fa-5x fa-download" style="color: #fff;"></i>
+      <i class="fa-solid fa-5x fa-magnifying-glass" style="color: #fff;"></i>
     </div>
     <div class="playlistOfLikedSong">
 
     </div>
   </main>
-  <!-- Javascript for icons -->
-  <!-- <script src="liked_page.js"></script> -->
-  <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+
+  <!-- JAVASCRIPT -->
+  <script src="likePageScript.js"></script>
+  <!-- fontawesome JAVASCRIPT link -->
+  <script src="https://kit.fontawesome.com/316a6af8a8.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -5,36 +5,32 @@ body{
     margin: 0 auto;
     background-color: black;
     background-image: url("/images/web-background.jpg");
+    background-repeat: no-repeat;
 }
-
+/* CSS on navBar */
 .bg-dark_black{
     background-color: black;
-    opacity: 85%;
+    opacity: 90%;
 }
 .navbar-brand{
     font-family: 'Island Moments', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large;
 }
-.useless{
-    color: white;
+.nav-item i {
+    padding: 5px;
 }
 .nav-item:hover{
-    background-color: rgba(37, 212, 24, 0.899);
+    background-color: rgba(37, 212, 24, 0.8);
     border-radius: 10px;
 }
-.icon-img{
-    margin: 1px 1px 1px 1px;
-    padding: 1px 10px 2px 2px;
-}
-
-.btn:hover{
+.searchBtn:hover{
     background-color: rgba(37, 212, 24, 0.899);
 }
 .btn-outline-success{
     color: rgba(37, 212, 24, 0.899);
     border: 1px solid rgba(37, 212, 24, 0.899);
 }
-
+/* style on signup and login button */
 .signup-btn{
     margin: 5px 1px 5px 20px;
     padding: 6px;
@@ -59,37 +55,22 @@ body{
     background-color: rgba(37, 212, 24, 0.899);
     color: white;
 }
-.acc-link{
-    text-decoration: none;
-    color: rgba(37, 212, 24, 0.899);
-}
-.acc-link:hover{
-    color: white;
-}
 
-.carousel{
-    margin: 20px;
-    padding: 10px;
-    align-items : center;
-}
-h2{
-    color: white;
-}
-/* clock */
-.wrap{
+
+/* CSS on main body */
+.wrap{             /* clock */
     color: whitesmoke;
     text-align: center;
     padding:2px;
 }
-
 #greeting{
     background-color: rgb(0, 0, 0);
-    /* display: inline-block; */
     border-radius: 40px;
     font-size: 20px;
     padding: 5px 8px;
     box-shadow: 0 4px 5px;
 }
+
 /* margin: 25px 50px 75px 100px;
 top margin is 25px
 right margin is 50px
@@ -101,6 +82,15 @@ top padding is 25px
 right padding is 50px
 bottom padding is 75px
 left padding is 100px */
+.carousel{
+    margin: 20px;
+    padding: 10px;
+    align-items : center;
+}
+h2{
+    color: white;
+}
+
 .categories{
     display: inline-block;
     margin: 15px 10px 15px 10px;
@@ -197,8 +187,4 @@ left padding is 100px */
 }
 .bottom-play img{
     padding-right: 5px;
-}
-
-.useless{
-    color: white;
 }

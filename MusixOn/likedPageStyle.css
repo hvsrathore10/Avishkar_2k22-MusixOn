@@ -47,7 +47,6 @@ body{
     flex-direction: row;
     background-color: rgb(66, 88, 231);
     color: white;
-    width: 100%;
 }
 /* header part of liked page */
 .header-likedPage .liked-icon {
@@ -77,8 +76,6 @@ h1{
     align-items: center;
     background-color: rgba(4, 48, 75, 0.762);
     color: white;
-    opacity: 80%;
-    width: 100%;
     height: 150px;
 }
 .transfer-Header i{
@@ -97,32 +94,43 @@ h1{
 .playlistOfLikedSong{
     background-color: black;
     color: white;
-    width: 100%;
-    height: 500px;
-}
-.tital {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
-    padding: 5px;
-}
-.folder {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
-    padding: 5px;
-}
-.folder .poster-songInfo {
-    display: flex;
-    flex-direction: row;
-}
-.poster-songInfo .songInfo {
-    display: flex;
-    flex-direction: column;
 }
 
+/* playlistOfLikedSong-Table */
+table {
+    border-collapse: collapse;
+    width: 97%;
+    margin: 25px 25px 100px 25px;
+    padding: 5px;
+}
+table th {
+    font-weight: bolder;
+    margin-bottom: 20px;
+    border-bottom: groove white;
+}
+table td, th {
+    text-align: left;
+    padding: 8px;
+}
+table tr:hover td {
+    background-color: rgba(138, 135, 135, 0.5);
+}
+table .hiddenInTable {
+    display: none;
+}
+table .songInfo-poster {
+    display: flex;
+    flex-direction: row;
+}
+table .songInfo-poster .songPoster {
+    width: 80px;
+    margin: 1px;
+    padding: 4px;
+    border-radius: 8px;
+} 
+table .songInfo-poster .songInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
 

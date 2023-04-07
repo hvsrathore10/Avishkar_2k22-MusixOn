@@ -40,28 +40,18 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
+            <div class="nav-link active" aria-current="page">
               <i class="fa-solid fa-house fa-xl" style="color: #fff;"></i>Home
-            </a>
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-solid fa-music fa-xl" style="color: #fff;"></i> Create Playlist</a>
+            <div class="nav-link" onclick="myFunction()"><i class="fa-solid fa-music fa-xl" style="color: #fff;"></i> Create Playlist</div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/MusixOn/liked_page.html"><i class="fa-solid fa-heart fa-xl" style="color: #fff;"></i>Liked Song List</a>
+            <div class="nav-link" onclick="myFunction()"><i class="fa-solid fa-heart fa-xl" style="color: #fff;"></i>Liked Song List</div>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-list fa-xl" style="color: #fff;"></i>Playlist's
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">#My Playlist 1</a></li>
-              <li><a class="dropdown-item" href="#">#My Playlist 2</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Add more Play Lists</a></li>
-            </ul>
+          <li class="nav-item" onclick="myFunction()">
+            <div class="nav-link" href="#" id="navbarPlaylist"><i class="fa-solid fa-list fa-xl" style="color: #fff;"></i>Playlist's</div>
           </li>
         </ul>
 
@@ -78,7 +68,8 @@
 
     </div>
   </nav>
-
+  <!-- snackbar -->
+  <div id="snackbar">Login to enjoy music with MusixOn</div>
   <!-- To display greeting message -->
   <div class="wrap">
     <h1 id="greeting"></h1>
@@ -195,7 +186,7 @@
     </div>
     <input type="range" name="range" id="myProgressBar" value="0">
     <figure class="current-songInfo">
-      <img src="/images/phir kabhi.jpeg" id="masterSongPoster" width="80px">
+      <img src="/songPosters/phirKabhi.jpeg" id="masterSongPoster" width="80px" style="border-radius: 5px;">
       <div class="songInfo">
         <span id="masterSongName" style="font-size: x-large;">Phir Kabhi</span><br>
         <span id="masterArtistName" style="font-size: smaller;">Arijit Singh</span>

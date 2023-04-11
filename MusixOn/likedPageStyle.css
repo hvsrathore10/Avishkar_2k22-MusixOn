@@ -41,6 +41,65 @@ body{
     padding: 10px;
 }
 
+
+/* shopping-cart CSS */
+/* The popup cart - hidden by default */
+.playlist-popup {
+    display: none;
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    right: 0;
+    border: 3px solid #000000;
+    z-index: 9;
+    height: 100%;
+}
+/* The Close Button (x) */
+.closePlaylist {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: bold;
+}
+.closePlaylist:hover,
+.closePlaylist:focus {
+    color: red;
+    cursor: pointer;
+}
+/* Add styles to the form container */
+.innerPlaylist-container {
+    max-width: 300px;
+    height: 100%;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.innerPlaylist-container img {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    min-height: 300px;
+}
+.innerPlaylist-container .booktestBtn {
+    font-weight: bold;
+    background-color: white;
+    color: red;
+    padding: 16px 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 160px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+/* Add some hover effects to buttons */
+.innerPlaylist-container .booktestBtn:hover {
+    color: black;
+}
+
+
+
 /* Main body style */
 .header-likedPage{
     display: flex;

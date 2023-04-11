@@ -53,19 +53,8 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/MusixOn/liked_page.html"><i class="fa-solid fa-heart fa-xl" style="color: #fff;"></i>Liked Song List</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <i class="fa-solid fa-list fa-xl" style="color: #fff;"></i>Playlist's
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">#My Playlist 1</a></li>
-              <li><a class="dropdown-item" href="#">#My Playlist 2</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Add more Play Lists</a></li>
-            </ul>
+          <li class="nav-item" id="playlist">
+            <div class="nav-link"><i class="fa-solid fa-list fa-xl" style="color: #fff;"></i>Playlist</div>
           </li>
         </ul>
         <div class="Avatar">
@@ -75,6 +64,21 @@
       </div>
     </div>
   </nav>
+
+  <!-- playList -->
+  <div class="playlist-popup" id="PlaylistId">
+    <form class="innerPlaylist-container">
+      <h3>#PLAYLIST</h3>
+      <span onclick="document.getElementById('PlaylistId').style.display='none'" class="closePlaylist" title="Close PlayList">&times;</span>
+
+      <label><b>#My Playlist1</b></label>
+      <label><b>#My Playlist2</b></label>
+      <label><b>#My Playlist3</b></label><hr>
+      <img src="/images/B2.png">
+  
+      <button type="button" class="booktestBtn">Add More Playlist</button>
+    </form>
+  </div>
   <!-- main body -->
   <main>
     <div class="header-likedPage">

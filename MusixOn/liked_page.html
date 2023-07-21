@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Island+Moments&display=swap"
     rel="stylesheet">
-  <title>MusixOn-LikedPage</title>
+  <title>MusixOn |LikedPage</title>
 
   <!--To generte Logo for MusixOn-Website (fovicon)  -->
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
@@ -26,6 +26,8 @@
     crossorigin="anonymous"></script>
   <!-- CSS style link : -->
   <link rel="stylesheet" href="likedPageStyle.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
@@ -91,7 +93,9 @@
     <div class="transfer-Header">
       <i class="fa-solid fa-5x fa-circle-play" id="masterPlay" style="color: #fff;"></i>
       <i class="fa-solid fa-5x fa-download" style="color: #fff;"></i>
-      <i class="fa-solid fa-5x fa-magnifying-glass" id="searchIcon" style="color: #fff;"></i>
+      <div id="search-container">
+        <i id="search-icon" class="fa-solid fa-5x fa-magnifying-glass" onclick="toggleSearchBox()"></i>
+    </div>
     </div>
     <div class="playlistOfLikedSong">
       <table class="playlistTable" id="idlist">

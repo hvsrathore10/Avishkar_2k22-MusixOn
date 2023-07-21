@@ -144,7 +144,7 @@ h1{
 #masterPlay:hover{
     transform: scale(1.2);
 }
-.fa-magnifying-glass{
+.search-container{
     position: absolute;
     right: 3vw;
 }
@@ -170,6 +170,9 @@ table th {
 table td, th {
     text-align: left;
     padding: 8px;
+}
+table td i {
+    cursor: pointer;
 }
 table tr:hover td {
     background-color: rgba(138, 135, 135, 0.5);

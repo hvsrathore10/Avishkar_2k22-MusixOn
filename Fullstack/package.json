@@ -1,0 +1,15 @@
+{
+  "name": "musixon",
+  "version": "1.0.0",
+  "description": "MusixOn Frontend and Backend ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hvsrathore10",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1"
+  }
+}

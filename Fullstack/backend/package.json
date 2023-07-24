@@ -4,12 +4,16 @@
   "description": "This is MusixOn Backend",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "hvsrathore10",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.1",
     "mongoose": "^7.4.0"
   },
   "devDependencies": {

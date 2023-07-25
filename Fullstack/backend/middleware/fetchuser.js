@@ -1,8 +1,8 @@
 const jwt = require('jsonwebtoken'); 
 
-const JWT_SECRET = 'MusixOn8&VERIFYSIGNATURE';
+const JWT_SECRET = process.env.JWT_SECRET;
 
-const fetchuser = (req,res,next)=>{
+const fetchUser = (req,res,next)=>{
     //Get the user from jwt toked and add id to req object
     const token = req.header('auth-token');
     if(!token){
@@ -20,4 +20,4 @@ const fetchuser = (req,res,next)=>{
     next();
 }
 
-module.exports = fetchuser;
+module.exports = fetchUser;

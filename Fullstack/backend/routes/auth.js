@@ -4,10 +4,10 @@ const User = require('../models/User');
 const { body, validationResult } = require('express-validator'); //validation for username,email & password
 const bcrypt = require('bcryptjs'); //package use for hashing of password(for user protection)
 const jwt = require('jsonwebtoken'); //json web token(JWT)
-const fetchuser = require('../middleware/fetchuser');
+const fetchUser = require('../middleware/fetchUser');
 
 
-const JWT_SECRET = 'MusixOn8&VERIFYSIGNATURE';  //specify verification signature
+const JWT_SECRET = process.env.JWT_SECRET;  //specify verification signature
 
 
 //ROUTE 1: Create a User using: POST "/api/auth/createuser"  -- no login required 
@@ -99,7 +99,7 @@ router.post('/login' , [
 })
 
 // ROUTE 3:Get loggedin user detail Using POST "/api/auth/getuser" ,Login required
-router.post('/getuser', fetchuser, async (req,res)=>{
+router.post('/getuser', fetchUser, async (req,res)=>{
     try {
         const userId = req.user.id
         let user = await User.findById(userId).select("-password");

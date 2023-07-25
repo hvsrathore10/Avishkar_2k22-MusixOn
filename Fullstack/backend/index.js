@@ -1,10 +1,12 @@
+const dotenv = require('dotenv');
+dotenv.config();
 const express = require('express');
 const connectToMongo = require('./db');
 
 connectToMongo(); //function imported from db.js to connect with database
 
 const app = express()
-const port = 2500
+const port = process.env.PORT || 3000
 
 app.use(express.json());
 
